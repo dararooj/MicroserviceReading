@@ -1,0 +1,25 @@
+Java is an object oriented programming language.It is not fully object oriented language
+because it uses primitive data type such as int, byte, long etc.
+FEATURES:
+1).It is plateform independent.
+2).It is secure.
+3).It is portable.
+4).It is object oriented.
+5).It is multithreaded.
+6).It is distributed.
+7).It is dynamic.
+java was developed by SUN Microsystem in 1995.
+Father of java is James Gosling.
+JDK(java development kit) is a software development environment which is used to develope software
+applications.It is plateform independent. It exists physically.It contains JRE and development tools.
+JDK contains its JVM, compiler,jar etc to complete the development of jave applications.
+JRE(java runtime environment) is a set of software tools which are used for java development applications.
+It provides runtime environment. It physically exists.It contains JVM and other libraries.
+JVM(java virtual machine) is a abstract machine.It is called virtual machine because it does not
+physically exists.It is a specification that provides runtime environment in which java byte codes
+are executed. It also runs other programs written in other languages and compiled in java byte codes.
+There are three notations in JVM:
+   .Specification
+   .Implementation
+   .Instance
+   Specification:-

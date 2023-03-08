@@ -1,1 +1,47 @@
 Hello my world.
+If we are  having various microservices that consumes REST API,and we have a client that uses
+these REST API through these microservices.For a client to call  a microservice it has to store the host
+and ports of each microservice which is not a good practice.Therefore, we put a structure between client
+and microservice which is called API Gateway.This gateway handles the client request and sends it a particular
+microservice.
+Each microservice has its own configuration.If we have to change the configuration of microservices, we have
+change configuration of every microservice  one by one which is not a good practice.So we make a pattern called
+server configuration (example git) where we put the configuration of all microservices and if we have to make
+a change in configuration we change it in server configuration.
+Service discovery:-
+A service discovery keeps the information about which service is up and which service is down.All the
+microservices register themselves in service discovery and keep updating the network regularly.
+If we have to make another microservice project, we have to write above these patterns(code) manually.To
+overcome this we use Spring cloud.So basically, Spring cloud provides tools for the developers to quickly
+build some of the common pattern.
+*)springcloud  service discovery can be implemented using following services:
+     .console
+     .zookeeper
+     .Eukera
+ Java developers use Eureka mostly.
+*).Spring cloud has its own configuration called property management repositoy but also can use open source
+projects-
+     .Git
+     .console
+     .Eureka
+*).loadbalancer allows us to create applications that communicate with each other in a balanced way.
+*).Resilience4j is a libary that provides client server patterns such as circuit breaker etc.
+                  ciruit breaker:- when microservices are connected with each other example A and B, when
+ client calls A but it is connected with B and microserver B is down and therefore,client is not getting
+ the response  So it calls it continously .But calling continuously is not a good practice so we put a
+ circuit  breaker which stops client from calling after some time(e.g; after calling it 5 times)
+ **). API gateway also acts as loadbalancer.
+ *).Spring cloud security is an authenticated and authorized framework that controls whocan access our services
+ and what they can do with our microservices.
+ *).Codebase:- a codebase is a collection of various source codes used to build a software applications.
+ It is having various deployments
+         .Development
+         .Test
+         .Staging
+         .Production
+ *).Dependencies:-?????
+ We should always use jar dependencies with their specific version so that we can use same microservice
+ with same library version.
+ *).configuration:-we should save conf. so that we can easily update it and run it without restarting
+the microservices.
+*).Backing service:it helps us to use the service continuously without any change in the code.

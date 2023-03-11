@@ -1,6 +1,7 @@
 Java is an object oriented programming language.It is not fully object oriented language
 because it uses primitive data type such as int, byte, long etc.
-FEATURES:
+
+*).FEATURES:
 1).It is plateform independent.
 2).It is secure.
 3).It is portable.
@@ -9,12 +10,16 @@ FEATURES:
 6).It is distributed.
 7).It is dynamic.
 java was developed by SUN Microsystem in 1995.
+
 Father of java is James Gosling.
+
 JDK(java development kit) is a software development environment which is used to develope software
 applications.It is plateform independent. It exists physically.It contains JRE and development tools.
 JDK contains its JVM, compiler,jar etc to complete the development of jave applications.
+
 JRE(java runtime environment) is a set of software tools which are used for java development applications.
 It provides runtime environment. It physically exists.It contains JVM and other libraries.
+
 JVM(java virtual machine) is a abstract machine.It is called virtual machine because it does not
 physically exists.It is a specification that provides runtime environment in which java byte codes
 are executed. It also runs other programs written in other languages and compiled in java byte codes.
@@ -22,4 +27,41 @@ There are three notations in JVM:
    .Specification
    .Implementation
    .Instance
-   Specification:-
+
+   Architecture:-It has following parts:
+     *.1).Java runtime system which contains classloader.runtime
+        classloader is a subsystem of jvm which is used to load the java files. whenever we run the
+java program, it is loaded first by the classloader.It has three inbuilt classloader.whenever we want to
+create our own classloader, we have to extend the classloader class.
+       There are three inbuilt classloader in jvm, these are:
+ 1). Bootstrap classloader: This the first classloader. It loads the rt.jar file which contains all class
+files .classloader
+2). Extensible Classloader: This is the child class of bootstrap classloader. It contains the $JAVA_HOME/
+jre/lib/ext directory.classloader
+3). System/Application classloader: This is the child classloader of extensible classloader. It loads the
+files from classpath.
+
+      *.2).Memory Area:
+     #).class/Method Area:stores per class structures such as runtime constant pool.
+     #). Heap: It stores the runtime area in which objects are allocated.
+     #). Stack: It stores local variables, partial results.
+     #). program counter (PC) register:It contains the address of java virtual machine instruction
+currently being executed.virtual
+     #). Native method Stack: It contains all the methods used in the application.
+
+     *.3).Java native labraries:
+     #). Executive engine:It contains virtual processor, interpreter, complier.
+     #). Java Native interface:It provided the interface to communicate with another application written
+in another language.
+
+Variable : is the name of a reserved area allocated in the memory.There are three types of variables
+ local, instance, static variable.
+        local variable are declared inside the body.virtual
+        instance variables are declared inside the class but outside the body.
+        A variable declared as Static is called as static variable.
+
+  *). Java comments:
+The Java comments are the statements in a program that are not executed by the compiler and interpreter.
+         #)There ar 2 types of comments in Java.
+          Single Line Comment   /....../
+          Multi Line Comment   /*.....*/
